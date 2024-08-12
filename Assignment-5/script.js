@@ -244,6 +244,7 @@ function saveData(){
 function getData(){
     task_cards=JSON.parse(localStorage.getItem('task-cards'));
     subt_parent=JSON.parse(localStorage.getItem('subt_parent'));
+    if(subt_parent===null) subt_parent={};
     id=JSON.parse(localStorage.getItem('id'));
     if(id==null) id=0; 
     console.log(task_cards);
